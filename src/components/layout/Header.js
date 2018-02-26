@@ -1,29 +1,28 @@
 import React, { Component } from 'react';
+import styles from '../styles/Header.css';
 
 class Header extends Component {
   render() {
     return (
       <header>
-          <div className="logo">
-            logo
+
+          <div>
+          <ul>
+
+            <li className="ProfilePicture">
+              Profile Picture Goes Here
+              </li>
+
+              <li className="Name">
+            Name Goes Here
+            </li>
+
+            <li className="CompanyName">
+              Company Name Goes Here
+              </li>
+          </ul>
           </div>
 
-          <nav>
-            <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-              <li>
-                <a href="#">Listings</a>
-              </li>
-            </ul>
-          </nav>  
       </header>
     );
   }
