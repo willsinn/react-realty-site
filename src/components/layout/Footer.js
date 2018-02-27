@@ -8,7 +8,7 @@ import styles from '../styles/Footer.css';
 class Footer extends Component {
   render() {
     return (
-      <footer className="footer-layout">
+      <footer id="footer-container">
 
 
         <div className="footer-col social">

@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
 
-          <header className="header-layout">
+          <header id="header-container">
               <div className="header-col picture">
                 <p className="header-content">Profile Picture Goes Here</p>
               </div>

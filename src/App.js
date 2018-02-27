@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-
+//import { NativeRouter } from 'react-router-native';
+//import { BrowserRouter } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import Home from './components/pages/Home';
+//import Home from './components/pages/Home';
 import NavBar from './components/layout/NavBar';
 import styles from './components/styles/App.css';
 
@@ -16,7 +17,6 @@ class App extends Component {
 
         <Header />
         <NavBar />
-        <Home />
         <Footer />
 
       </div>
