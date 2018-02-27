@@ -10,11 +10,11 @@ class Header extends Component {
                 <p className="header-content">Profile Picture Goes Here</p>
               </div>
 
-              <div className="header-col name">
+              <div className ="header-col name">
                 <p className="header-content"> Name Goes Here </p>
               </div>
 
-              <div className="header-col company">
+              <div className ="header-col company">
                 <p className="header-content">Company Name Goes Here</p>
               </div>
           </header>

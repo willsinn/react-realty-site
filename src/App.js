@@ -4,7 +4,7 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from './components/pages/Home';
 import NavBar from './components/layout/NavBar';
-import styles from './components/styles/App.css'
+import styles from './components/styles/App.css';
 
 
 
