@@ -4,26 +4,20 @@ import styles from '../styles/Header.css';
 class Header extends Component {
   render() {
     return (
-      <header>
 
-          <div>
-          <ul>
+          <header className="header-layout">
+              <div className="header-col picture">
+                <p>Profile Picture Goes Here</p>
+              </div>
 
-            <li className="ProfilePicture">
-              Profile Picture Goes Here
-              </li>
+              <div className="header-col name">
+                <p> Name Goes Here </p>
+              </div>
 
-              <li className="Name">
-            Name Goes Here
-            </li>
-
-            <li className="CompanyName">
-              Company Name Goes Here
-              </li>
-          </ul>
-          </div>
-
-      </header>
+              <div className="header-col company">
+                <p>Company Name Goes Here</p>
+              </div>
+          </header>
     );
   }
 }

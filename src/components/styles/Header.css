@@ -1,15 +1,14 @@
 
-div {
-  display: block;
-  width: 100%;
+.header-layout {
+  display: flex;
   background: black;
   color: white;
-  height: 100px;
+  height: 90px;
+  justify-content: space-between;
+}
 
-  }
-
-li {
-  position
-  display: inline-block;
-  width: 33%;
+.header-col {
+  box-sizing: border-box;
+  border: 2px solid yellow;
+  flex-basis: 25%;
 }
