@@ -6,19 +6,20 @@ class NavBar extends Component {
     return (
 
           <nav className="navbar-layout">
-            <ul>
+            <ul className="nav-buttons">
+
               <li className="nav-col home">
-                <a className="nav-content" href="#">Home</a>
-              </li>
+                <a className="nav-button" href="#">Home</a></li>
+
               <li className="nav-col about">
-                <a className="nav-content" href="#">About</a>
-              </li>
+                <a className="nav-button" href="#">About</a></li>
+
               <li className="nav-col contact">
-                <a className="nav-content" href="#">Contact</a>
-              </li>
+                <a className="nav-button" href="#">Contact</a></li>
+
               <li className="nav-col listings">
-                <a className="nav-content" href="#">Listings</a>
-              </li>
+                <a className="nav-button" href="#">Listings</a></li>
+
             </ul>
           </nav>
 

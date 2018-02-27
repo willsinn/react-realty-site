@@ -6,7 +6,7 @@
   display: flex;
 }
 
-ul {
+.nav-buttons {
   list-style: none;
   display: flex;
   width: 60%;
@@ -21,7 +21,7 @@ ul {
   display: flex;
 }
 
-.nav-content {
+.nav-button {
   margin: auto;
   text-decoration: none;
 }

@@ -1,0 +1,54 @@
+.footer-layout {
+  position:absolute;
+  bottom: 0;
+  height: 70px;
+  background-color: darkgreen;
+  color: white;
+  display: flex;
+  width: 100%;
+
+
+}
+
+.footer-col {
+  flex: 1;
+  display: flex;
+}
+
+.social-buttons {
+  list-style: none;
+  display: flex;
+  flex:1;
+  justify-content: space-between;
+}
+
+.social-col {
+  border: 2px solid lightblue;
+  flex-basis: 30%;
+  display: flex;
+}
+
+.social-button {
+  text-decoration: none;
+  margin: auto;
+  color: lightblue;
+}
+
+.cert-buttons {
+  list-style: none;
+  display: flex;
+  flex:1;
+  justify-content: space-between;
+}
+
+.cert-col {
+  border: 2px solid lightblue;
+  flex:1;
+  display: flex;
+}
+
+.cert-button {
+  text-decoration: none;
+  margin: auto;
+  color: lightblue;
+}
