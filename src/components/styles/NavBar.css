@@ -1,0 +1,27 @@
+
+.navbar-layout {
+  background: red;
+  color: white;
+  height: 50px;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+
+}
+
+.nav-col {
+  border: 2px solid blue;
+  flex-basis: 23%;
+  margin:auto;
+  display: flex;
+}
+
+.nav-content {
+  margin: auto;
+  text-decoration: none;
+}

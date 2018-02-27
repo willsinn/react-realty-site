@@ -5,19 +5,19 @@ class NavBar extends Component {
   render() {
     return (
 
-          <nav>
+          <nav className="navbar-layout">
             <ul>
-              <li>
-                <a href="#">Home</a>
+              <li className="nav-col home">
+                <a className="nav-content" href="#">Home</a>
               </li>
-              <li>
-                <a href="#">About</a>
+              <li className="nav-col about">
+                <a className="nav-content" href="#">About</a>
               </li>
-              <li>
-                <a href="#">Contact</a>
+              <li className="nav-col contact">
+                <a className="nav-content" href="#">Contact</a>
               </li>
-              <li>
-                <a href="#">Listings</a>
+              <li className="nav-col listings">
+                <a className="nav-content" href="#">Listings</a>
               </li>
             </ul>
           </nav>

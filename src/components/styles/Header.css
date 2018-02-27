@@ -1,14 +1,26 @@
 
 .header-layout {
-  display: flex;
   background: black;
   color: white;
   height: 90px;
-  justify-content: space-between;
+
+}
+
+@media (min-width:768px) {
+  .header-layout {
+    display: flex;
+    justify-content: space-between;
+
+  }
 }
 
 .header-col {
   box-sizing: border-box;
   border: 2px solid yellow;
   flex-basis: 25%;
+  display: flex;
+}
+
+.header-content {
+  margin: auto;
 }
