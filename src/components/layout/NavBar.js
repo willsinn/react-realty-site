@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Home from '../pages/Home';
-import Listings from '../pages/Listings';
+import PageControl from './layout/PageControl';
 import styles from '../styles/NavBar.css';
 import ReactDOM from 'react-dom';
 //import Listings from '..pages/Listings';
@@ -9,33 +8,26 @@ import ReactDOM from 'react-dom';
 
 
 class NavBar extends Component {
-  constructor(props) {
-  super(props)
-  this.state = {
-    active: {
-      1: true,
-      2: false,
-    }
-  }
-}
 
-activeFilter(e){
-  const newObj = {
-      [e.target.id]: !this.state.active[e.target.id]
+
+  const isActivePage = props.isActivePage;
+    if {
+       <.onClickValue===.isActivePage />
+    } return;
+    else {
+     <.match.onClickValue === .unActivePage,
+        .unActivateCurrentPage,
+        .activateOnClickedPage/>
     }
-  this.setState({
-    active: Object.assign({}, this.state.active, newObj)
-  })
-}
 
 render(){
   return (
-    <div className="NavBar">
+    <wrapper className="NavBar">
 
       <li className="Home">
-        <a href="#" onClick={(e) => this.handleHomeClick(e)}>
-          Home
-        </a>
+        Home
+
+        {homePageClicked}
       </li>
       <li className="Listings">
         <a href="#" onClick={(e) => this.handleListingsClick(e)}>
@@ -43,7 +35,7 @@ render(){
         </a>
       </li>
 
-    </div>
+    </wrapper>
 
     );
   }
