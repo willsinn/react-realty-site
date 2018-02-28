@@ -9,6 +9,47 @@ import ReactDOM from 'react-dom';
 
 
 class NavBar extends Component {
+  constructor(props) {
+  super(props)
+  this.state = {
+    active: {
+      : false,
+      two: false,
+    }
+  }
+}
+
+toggleFilter(e){
+  const newObj = {
+      [e.target.id]: !this.state.toggle[e.target.id]
+    }
+  this.setState({
+    toggle: Object.assign({}, this.state.toggle, newObj)
+  })
+}
+
+render(){
+  return <div>
+    <li className={this.state.toggle.one ? 'selected' : 'unselected'} id="one" onClick={this.toggleFilter.bind(this)} >1900 - 1925</li>
+    <li className={this.state.toggle.two ? 'selected' : 'unselected'} id="two" onClick={this.toggleFilter.bind(this)} >1925 - 1950</li>
+  </div>
+}
+}
+
+export default NavBar;
+// <div className='page' id='page-0'>
+//     This is the Home Page
+//     {
+//         if (currentPage === 'listings') {
+//             <Listings />
+//         } else {
+//             <Projects />
+//         }
+//     }
+// </div>
+
+/*
+class NavBar extends Component {
     render() {
       return (
         <div>
@@ -57,7 +98,7 @@ class NavPages extends React.Component {
     }
 
     renderActiveIDPage() {
-      return (this.state.activeID ? this.state.activeID : null);
+      return (this.state.activeID ? this.state.activeID.page.id : null);
     }
     render() {
     return (
@@ -69,7 +110,9 @@ class NavPages extends React.Component {
   }
 }
 
-ReactDOM.render(<NavPages />, document.getElementById('active'));
+ReactDOM.render(<NavPages />, document.getElementById(page.id));
+
+*/
 
 
 
@@ -91,7 +134,6 @@ ReactDOM.render(<NavPages />, document.getElementById('active'));
       //
       // </div>
 
-export default NavBar;
 //------------ npm react-router-native
 
 // import { NativeRouter } from 'react-router-native';

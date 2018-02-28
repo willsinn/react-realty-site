@@ -1,21 +1,36 @@
 import React, { Component } from 'react';
+import Listings from './listings';
 
 
-const page = document.getElementById('page');
-page.id = Home(page.id)
+
 
 class Home extends Component {
+    constructor() {
+      super();
+      this.state = {activePage: true};
+      this.handleHomeClick = this.handleHomeClick.bind(this);
+    }
 
+    handleHomeClick(e) {
+      e.preventDefault();
+      this.setState(prevState => ({
+        activePage: !prevState.activePage
+      }));
+    }
 
   render() {
     return (
-
-      <div className='page' id='page-0'>
-          This is the Home Page
+      <div className="Home">
+          {page}
+        <a href="#" onClick={this.handleHomeClick}>
+          {this.state.activePage ? 'Hide' : 'Show'}
+          Home
+        </a>
       </div>
     );
   }
 }
+
 
 
 export default Home;
