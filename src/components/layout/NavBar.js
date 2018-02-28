@@ -13,8 +13,8 @@ class NavBar extends Component {
   super(props)
   this.state = {
     active: {
-      : false,
-      two: false,
+      homePage: true,
+      listingsPage: false,
     }
   }
 }
@@ -29,11 +29,13 @@ toggleFilter(e){
 }
 
 render(){
-  return <div>
-    <li className={this.state.toggle.one ? 'selected' : 'unselected'} id="one" onClick={this.toggleFilter.bind(this)} >1900 - 1925</li>
-    <li className={this.state.toggle.two ? 'selected' : 'unselected'} id="two" onClick={this.toggleFilter.bind(this)} >1925 - 1950</li>
-  </div>
-}
+  return (
+    <div>
+      <div cl
+
+    </div>
+    );
+  }
 }
 
 export default NavBar;
