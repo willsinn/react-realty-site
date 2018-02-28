@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Listings from './listings';
 
 
 
@@ -21,13 +20,15 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="Home">
-        <a href="#" onClick={this.handleHomeClick}>
+      <li className="Home">
+        <a id="homePage" href="#" onClick={this.handleHomeClick}>
           {this.state.active ? 'Hide' : 'Show'}
           Home
         </a>
-        {homePage}
-      </div>
+        {this.props.page}    
+      </li>
+
+
     );
   }
 }

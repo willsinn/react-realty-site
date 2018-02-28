@@ -20,13 +20,13 @@ class Listings extends Component {
 
 render() {
   return (
-    <div className="Listings">
-      <a href="#" onClick={this.handleListingsClick}>
+    <li className="Listings">
+      <a id="listingsPage" href="#" onClick={this.handleListingsClick}>
         {this.state.active ? 'Hide' : 'Show'}
         Listings
       </a>
-      {listingsPage}
-    </div>
+      {this.props.page}    
+    </li>
   );
   }
 }

@@ -13,150 +13,40 @@ class NavBar extends Component {
   super(props)
   this.state = {
     active: {
-      homePage: true,
-      listingsPage: false,
+      1: true,
+      2: false,
     }
   }
 }
 
-toggleFilter(e){
+activeFilter(e){
   const newObj = {
-      [e.target.id]: !this.state.toggle[e.target.id]
+      [e.target.id]: !this.state.active[e.target.id]
     }
   this.setState({
-    toggle: Object.assign({}, this.state.toggle, newObj)
+    active: Object.assign({}, this.state.active, newObj)
   })
 }
 
 render(){
   return (
-    <div>
-      <div cl
+    <div className="NavBar">
+
+      <li className="Home">
+        <a href="#" onClick={(e) => this.handleHomeClick(e)}>
+          Home
+        </a>
+      </li>
+      <li className="Listings">
+        <a href="#" onClick={(e) => this.handleListingsClick(e)}>
+          Listings
+        </a>
+      </li>
 
     </div>
+
     );
   }
 }
 
 export default NavBar;
-// <div className='page' id='page-0'>
-//     This is the Home Page
-//     {
-//         if (currentPage === 'listings') {
-//             <Listings />
-//         } else {
-//             <Projects />
-//         }
-//     }
-// </div>
-
-/*
-class NavBar extends Component {
-    render() {
-      return (
-        <div>
-
-          id={ this.props.id }
-          className={ this.props.active ? 'active': null}
-          onClick={ this.props.handleClick } />
-              { this.props.page }
-       </div>
-      // <li button className={(this.state.activePageClassName === "nav-page1") ? "active" : ""}></li>
-
-  )}
-}
-
-class NavPages extends React.Component {
-
-    constructor() {
-    super();
-
-    this.state = {
-      pages: [
-        {id: 1, page: 1},
-        {id: 2, page: 2}
-        ],
-        activeID: null
-      };
-    }
-
-    handleClick(e)  {
-      if (this.state.activeID !== null) return;
-
-      const id = parseInt(e.target.id);
-      this.setState({
-        activeID: id
-      });
-    }
-
-    renderPages() {
-      return (this.state.pages.map( pages =>
-          <NavBar
-              id={pages.id}
-              active={pages.id === this.state.activeID}
-              page={pages.page}
-              handleClick={this.handleClick.bind(this)}
-           /> ));
-    }
-
-    renderActiveIDPage() {
-      return (this.state.activeID ? this.state.activeID.page.id : null);
-    }
-    render() {
-    return (
-        <div>
-          {this.renderActiveIDPage()}
-          {this.renderPages()}
-        </div>
-    );
-  }
-}
-
-ReactDOM.render(<NavPages />, document.getElementById(page.id));
-
-*/
-
-
-
-      // <div>
-      //   <nav id="navbar-container">
-      //
-      //     <ul>
-      //       <li button
-      //     // <ul className="nav-pages">
-      //     //
-      //     //   <li className={(this.state.activePageClassName === "nav-page2") ? "active" : ""}></li>
-      //     //
-      //
-      //     //
-      //     //
-      //     // </ul>
-      //   </nav>
-      //   <Home />
-      //
-      // </div>
-
-//------------ npm react-router-native
-
-// import { NativeRouter } from 'react-router-native';
-// import { BrowserRouter } from 'react-router-dom';
-
-// ReactDOM.render((
-//   <BrowserRouter>
-//     <homeRouter />
-//   </BrowserRouter>
-// ), el)
-
-// const homeRouter = () => (
-//   <div>
-//     <nav>
-//       <Link to='../pages/Home'>'Home'</Link>
-//     </nav>
-//     <div>
-//       <Route path='../pages/Home' component={Home}/>
-//     </div>
-//   </div>
-// )
-
-
-//import { NativeRouter, Route, Link } from 'react-router-native';
