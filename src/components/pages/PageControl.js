@@ -21,24 +21,17 @@ handleListingsPageClick() {
   this.setState({isActivePage: false});
 }
 
-handleClick(e){
-  e.preventDefault();
-  if (this.onClick.isActivePage === true){
-    return;
-  } else {
-    this.setState(prevState=> {
-      isActivePage: !prevState.isActivePage
 
-    })
-  }
-}
 
 render(){
   const isActivePage = this.state.isActivePage;
 
 
+
   return (
     <div className="PageControl">
+      <ListingsPage />
+      <HomePage />
     </div>
     );
   }
