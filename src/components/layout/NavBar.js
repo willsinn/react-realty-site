@@ -2,41 +2,35 @@ import React, { Component } from 'react';
 import PageControl from './layout/PageControl';
 import styles from '../styles/NavBar.css';
 import ReactDOM from 'react-dom';
-//import Listings from '..pages/Listings';
-
-
+import PageControl from '..pages/PageControl';
 
 
 class NavBar extends Component {
 
+  HomePageButton(props) {
+    return (
+    <button onClick={this.props.onClick}>
+      Home
+    </button>
+  );
+}
 
-  const isActivePage = props.isActivePage;
-    if {
-       <.onClickValue===.isActivePage />
-    } return;
-    else {
-     <.match.onClickValue === .unActivePage,
-        .unActivateCurrentPage,
-        .activateOnClickedPage/>
-    }
+ListingsPageButton(props) {
+  return (
+  <button onClick={this.props.onClick}>
+    Home
+  </button>
+);
+}
 
 render(){
   return (
     <wrapper className="NavBar">
+      {HomePageButton}
+      {ListingsPageButton}
 
-      <li className="Home">
-        Home
-
-        {homePageClicked}
-      </li>
-      <li className="Listings">
-        <a href="#" onClick={(e) => this.handleListingsClick(e)}>
-          Listings
-        </a>
-      </li>
 
     </wrapper>
-
     );
   }
 }
