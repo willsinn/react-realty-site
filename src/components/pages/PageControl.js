@@ -8,7 +8,7 @@ import ListingsPage from './ListingsPage';
 class PageControl extends Component {
 
   renderActivePage() {
-    if (this.props.activePage === "listings") {
+    if (this.props.activePage === 'listings') {
       return <ListingsPage />;
     } else if (this.props.activePage === 'home') {
       return <HomePage />;
@@ -30,15 +30,3 @@ class PageControl extends Component {
 
 
 export default PageControl;
-
-// let page = null;
-//   if (isActivePage)
-//
-// activeFilter(e){
-// const newObj = {
-//     [e.target.id]: !this.state.active[e.target.id]
-//   }
-// this.setState({
-//   active: Object.assign({}, this.state.active, newObj)
-// })
-// }

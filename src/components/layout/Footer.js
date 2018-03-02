@@ -15,13 +15,13 @@ class Footer extends Component {
 
           <ul className="social-buttons">
               <li className="social-col facebook">
-                <a className="social-button" href="#">Facebook</a></li>
+                <a className="social-button" href="button">Facebook</a></li>
 
               <li className="social-col instagram">
-                <a className="social-button" href="#">Instagram</a></li>
+                <a className="social-button" href="button">Instagram</a></li>
 
               <li className="social-col twitter">
-                <a className="social-button" href="#">Twitter</a></li>
+                <a className="social-button" href="button">Twitter</a></li>
           </ul>
 
         </div>
@@ -30,16 +30,16 @@ class Footer extends Component {
 
           <ul className="cert-buttons">
               <li className="cert-col cert1">
-                <a className="cert-button" href="#">Hunter</a></li>
+                <a className="cert-button" href="button">Hunter</a></li>
 
               <li className="cert-col cert2">
-                <a className="cert-button" href="#">HRBlock</a></li>
+                <a className="cert-button" href="button">HRBlock</a></li>
 
               <li className="cert-col cert3">
-                <a className="cert-button" href="#">Cert1</a></li>
+                <a className="cert-button" href="button">Cert1</a></li>
 
               <li className="cert-col cert4">
-                <a className="cert-button" href="#">Cert2</a></li>
+                <a className="cert-button" href="button">Cert2</a></li>
           </ul>
 
         </div>

@@ -15,7 +15,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.handleNavigationClick = this.handleNavigationClick.bind(this);
-    this.state = {activePage: null};
+    this.state = {activePage: 'home'};
   }
 
   handleNavigationClick(pageName) {
