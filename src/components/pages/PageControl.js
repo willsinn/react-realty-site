@@ -6,33 +6,23 @@ import ListingsPage from './ListingsPage';
 
 
 class PageControl extends Component {
-  constructor() {
-    super();
-    this.handleHomePageClick = this.handleHomePageClick.bind(this);
-    this.handleListingsPageClick = this.handleListingsPageClick.bind(this);
-    this.state = {isActivePage: false};
+
+  renderActivePage() {
+    if (this.props.activePage === "listings") {
+      return <ListingsPage />;
+    } else if (this.props.activePage === 'home') {
+      return <HomePage />;
+    } else {
+      return null;
+    }
   }
 
-handleHomePageClick() {
-  this.setState({isActivePage: true});
-}
-
-handleListingsPageClick() {
-  this.setState({isActivePage: false});
-}
-
-
-
-render(){
-  const isActivePage = this.state.isActivePage;
-
-
-
-  return (
-    <div className="PageControl">
-      <ListingsPage />
-      <HomePage />
-    </div>
+  render() {
+    console.log('this.props.activePage', this.props.activePage);
+    return (
+      <div className="PageControl">
+        {this.renderActivePage()}
+      </div>
     );
   }
 }

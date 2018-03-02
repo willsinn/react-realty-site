@@ -11,7 +11,7 @@ class HomePage extends Component {
     return (
       <li className="HomePage">
         <div>
-          {this.props.page.title}
+    
           <p>Home Page is Rendered</p>
         </div>
       </li>
