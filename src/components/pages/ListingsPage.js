@@ -8,8 +8,14 @@ class ListingsPage extends Component {
 
 render() {
 
+  var liStyle =  {
+    listStyle: 'none',
+    backgroundColor: 'red',
+    display: 'flex',
+    flex: '1'
+  }
   return (
-    <li className="ListingsPage">
+    <li style = {liStyle} className="ListingsPage">
       <div>
 
         <p>Listings Page is Rendered</p>
