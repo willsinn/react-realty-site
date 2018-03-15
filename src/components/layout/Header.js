@@ -4,7 +4,7 @@ import styles from '../styles/Header.css';
 class Header extends Component {
   render() {
     return (
-
+      <div className="StickyHeader">
           <header id="header-container">
               <div className="header-col picture">
                 <p className="header-content">Profile Picture Goes Here</p>
@@ -18,6 +18,7 @@ class Header extends Component {
                 <p className="header-content">Company Name Goes Here</p>
               </div>
           </header>
+        </div>
     );
   }
 }

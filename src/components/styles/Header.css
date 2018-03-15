@@ -1,3 +1,7 @@
+.StickyHeader {
+  position:fixed;
+  width: 100%;
+}
 
 #header-container {
   background: black;
@@ -19,8 +23,10 @@
   border: 2px solid yellow;
   flex-basis: 25%;
   display: flex;
+
 }
 
 .header-content {
   margin: auto;
+
 }
